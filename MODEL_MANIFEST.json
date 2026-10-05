@@ -1,0 +1,30 @@
+{
+  "yolo": {
+    "path": "models/yolo/best.pt",
+    "source_upload": "best.pt",
+    "sha256": "cbbee04d0225caf2737475f0359b2763b41f8a24794782253b31ec032a2c2211"
+  },
+  "vit_classifier": {
+    "path": "models/vit/best_model.pth",
+    "source_upload": "best_model.pth",
+    "architecture": "vit_small_patch16_224",
+    "outputs": 137,
+    "classes_path": "models/vit/classes.json",
+    "sha256": "a20752961bfc6fe5f387e41ddc7cd45da79edea1ed2b37dc17d0dc98a4402ae2"
+  },
+  "nutrition_regression": {
+    "path": "models/nutrition/best_model.pth",
+    "source_upload": "best_model(1).pth",
+    "architecture": "vit_small_patch16_224",
+    "outputs": 5,
+    "targets": ["calories", "mass", "fat", "carb", "protein"],
+    "checkpoint_epoch": 28,
+    "checkpoint_val_mae": 14.49989710876003,
+    "sha256": "d7f54438274ddee2b22f8d8769be655a956925c8fd0f50d01625f69000b4bccf"
+  },
+  "class_order": {
+    "count": 137,
+    "sha256": "48b155369054c97472e6281f99fe7fe838433f1e4e5d8b206b022b9339a888d6",
+    "note": "Matches the classes.json included in the supplied ViT code archive byte-for-byte."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "NutriSight",
+    "slug": "nutrisight",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "scheme": "nutrisight",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.nutrisight.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.nutrisight.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "backgroundColor": "#FFFDF7"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-logo.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFDF7",
+          "imageWidth": 160
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a meal photo to estimate its nutrition.",
+          "cameraPermission": "Take a meal photo to recognize food.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-secure-store",
+      "expo-font",
+      "expo-router"
+    ],
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}
